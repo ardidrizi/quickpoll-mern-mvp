@@ -57,6 +57,7 @@ function CreatePoll() {
 
   return (
     <div
+      className="qp-container"
       style={{
         padding: 20,
         maxWidth: 400,

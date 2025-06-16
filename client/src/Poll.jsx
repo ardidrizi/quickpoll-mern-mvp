@@ -55,6 +55,7 @@ export default function Poll() {
 
   return (
     <div
+      className="qp-container"
       style={{
         padding: 20,
         maxWidth: 440,

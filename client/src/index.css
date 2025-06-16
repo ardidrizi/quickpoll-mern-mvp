@@ -1,4 +1,25 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
+  margin: 0;
+}
+
+/* Responsive container for main content */
+@media (max-width: 600px) {
+  .qp-container {
+    max-width: 98vw !important;
+    padding: 8vw 2vw !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 1.3em !important;
+  }
+  button,
+  input {
+    font-size: 1em !important;
+    padding: 12px !important;
+  }
 }
