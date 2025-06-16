@@ -1,3 +1,4 @@
+
 # QuickPoll MERN MVP
 
 A minimal real-time polling app built with the MERN stack (MongoDB, Express, React, Node.js) and Vite.
@@ -18,54 +19,63 @@ A minimal real-time polling app built with the MERN stack (MongoDB, Express, Rea
 
 ### Installation
 
-Clone the repo:
+1. **Clone the repo:**
 
-````bash
-git clone https://github.com/yourusername/quickpoll-mern-mvp.git
-cd quickpoll-mern-mvp
-Install backend dependencies and set environment variables:
+    ```bash
+    git clone https://github.com/ardidrizi/quickpoll-mern-mvp.git
+    cd quickpoll-mern-mvp
+    ```
 
-```bash
-npm install
-cd server
-npm install
+2. **Setup and start the backend:**
 
-Create a `.env` file in the `server` directory with the following variables:
+    ```bash
+    cd server
+    npm install
+    ```
 
-```env
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/quickpoll
+    Create a `.env` file in the `server` directory with the following variables:
 
-Start the backend server:
+    ```env
+    PORT=5000
+    MONGO_URI=mongodb://localhost:27017/quickpoll
+    ```
 
-```bash
-node index.js
+    Start the backend server:
 
-Open a new terminal, install frontend dependencies and set environment variables:
-```bash
-cd ../client
-npm install
+    ```bash
+    node index.js
+    ```
 
-Create a `.env` file in the `client` directory with the following variables:
+3. **Setup and start the frontend:**
 
-```env
-VITE_API_URL=http://localhost:5000
+    Open a new terminal window/tab, then:
 
-Start the frontend development server:
+    ```bash
+    cd client
+    npm install
+    ```
 
-```bash
-npm run dev
-````
+    Create a `.env` file in the `client` directory with the following variable:
 
-Now you can access the app at `http://localhost:5173`.
+    ```env
+    VITE_API_URL=http://localhost:5000
+    ```
 
-### Usage
+    Start the frontend development server:
 
-Create a poll by entering a question and options
+    ```bash
+    npm run dev
+    ```
 
-Share the poll URL with others
+4. **Access the app:**
 
-Vote and watch results update live in all connected clients
+    Open your browser and go to [http://localhost:5173](http://localhost:5173)
+
+## Usage
+
+- Create a poll by entering a question and multiple options.
+- Share the poll URL with others.
+- Vote and watch the results update live for all connected clients.
 
 ## License
 
